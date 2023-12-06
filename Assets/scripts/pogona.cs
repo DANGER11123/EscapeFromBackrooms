@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class pogona : MonoBehaviour
+public class Pogona : MonoBehaviour
 {
     [SerializeField] GameObject IsHunting;
     private void OnTriggerEnter(Collider other)

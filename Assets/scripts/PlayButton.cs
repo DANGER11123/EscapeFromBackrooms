@@ -11,9 +11,10 @@ public class PlayButton : MonoBehaviour
     {
         BtnPlay.onClick.AddListener(Play);
     }
-    void Play()
+    private void Play()
     {
         int IndexScene = PlayerPrefs.GetInt("LVL", 1);
+
         if (IndexScene == 0) 
         {
             PlayerPrefs.SetInt("LVL", 1);
