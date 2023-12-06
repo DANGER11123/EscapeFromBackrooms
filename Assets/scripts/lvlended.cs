@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,9 +16,7 @@ public class lvlended : MonoBehaviour
     {
         if (other.tag == "Player")
         { 
-            Debug.Log(Scene);
             PlayerPrefs.SetInt("LVL", Scene);
-            Debug.Log(PlayerPrefs.GetInt("LVL"));
             SceneManager.LoadScene(Scene);
         }
     }
